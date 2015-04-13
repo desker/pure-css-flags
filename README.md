@@ -1,0 +1,1 @@
+# Collection flags writes on pure css

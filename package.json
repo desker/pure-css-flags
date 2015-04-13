@@ -1,0 +1,20 @@
+{
+  "name": "pure-css-flags",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Serg Desker",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.6.1",
+    "gulp": "^3.8.11",
+    "gulp-less": "^3.0.2",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.0",
+    "less-plugin-autoprefix": "^1.4.1"
+  }
+}

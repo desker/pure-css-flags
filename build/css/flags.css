@@ -1,0 +1,8 @@
+.css-flag {
+  width: 24px;
+  height: 16px;
+  display: inline-block;
+}
+.css-flag.russia {
+  background: linear-gradient(to bottom, #eeeeee 0%, #eeeeee 33.3%, #0000aa 33.4%, #0000aa 66.7%, #aa0000 66.8%, #aa0000 100%);
+}
