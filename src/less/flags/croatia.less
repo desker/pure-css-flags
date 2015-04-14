@@ -4,11 +4,18 @@
   &:before {
     position: absolute;
     z-index: 20;
-    font-size: 0.6em;
-    transform: rotate(45deg);
-    color: #B7060C;
+    font-size: 0.3em;
+    letter-spacing: -1px;
+    overflow: hidden;
+    background: #B7060C;
+    line-height: .7em;
+    color: #fff;
     left: 50%; top: 50%;
-    margin-left: -.5em; margin-top: -.6em;
-    content: '❖';
+    white-space: nowrap;
+    height: 1em;
+    margin-left: -.7em; margin-top: -.5em;
+    content: '▚▚';
+    //border: 1px solid fadeout(#C40002, 40%);
+    border-radius: 0 0 50% 50%;
   }
 }

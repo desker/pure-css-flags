@@ -83,12 +83,53 @@
 .css-flag.flag-croatia:before {
   position: absolute;
   z-index: 20;
-  font-size: 0.6em;
-  transform: rotate(45deg);
-  color: #B7060C;
+  font-size: 0.3em;
+  letter-spacing: -1px;
+  overflow: hidden;
+  background: #B7060C;
+  line-height: .7em;
+  color: #fff;
   left: 50%;
   top: 50%;
-  margin-left: -0.5em;
-  margin-top: -0.6em;
-  content: '❖';
+  white-space: nowrap;
+  height: 1em;
+  margin-left: -0.7em;
+  margin-top: -0.5em;
+  content: '▚▚';
+  border-radius: 0 0 50% 50%;
+}
+.css-flag.flag-denmark {
+  background: #CF0B31;
+  position: relative;
+  overflow: hidden;
+}
+.css-flag.flag-denmark:before {
+  position: absolute;
+  left: -2px;
+  line-height: .55em;
+  content: '+--';
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: -0.4em;
+  color: #fff;
+}
+.css-flag.flag-estonia {
+  background: linear-gradient(to bottom, #3a75c3 0, #3a75c3 33.3%, #000000 33.34%, #000000 66.66%, #ffffff 66.67%, #ffffff 100%);
+}
+.css-flag.flag-greece {
+  background: linear-gradient(#0001fd 0, #0001fd 25%, #ffffff 25%, #ffffff 50%, #0001fd 50%, #0001fd 75%, #ffffff 75%, #ffffff 100%);
+  background-size: auto 25%;
+}
+.css-flag.flag-greece:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-indent: -1px;
+  overflow: hidden;
+  color: #fff;
+  height: .5em;
+  width: .5em;
+  background: #0001FD;
+  content: '+';
+  line-height: .5em;
 }

@@ -25,7 +25,7 @@ gulp.task('server', function() {
     }
   });
 
-  gulp.watch('./src/less/**/*.less', ['styles']);
+  gulp.watch('./src/less/**.less', ['styles']);
   gulp.watch('./src/*.html', ['copy']);
 });
 

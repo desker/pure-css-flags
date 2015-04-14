@@ -1,0 +1,20 @@
+&.flag-greece {
+  background: linear-gradient(
+    #0001FD 0, #0001FD 25%, #fff 25%, #fff 50%,
+    #0001FD 50%, #0001FD 75%, #fff 75%, #fff 100%
+  );
+  background-size: auto 25%;
+
+  &:before {
+    position: absolute;
+    left: 0; top: 0;
+    text-indent: -1px;
+    overflow: hidden;
+    color: #fff;
+    height: .5em;
+    width: .5em;
+    background: #0001FD;
+    content: '+';
+    line-height: .5em;
+  }
+}
