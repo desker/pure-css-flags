@@ -1,8 +1,10 @@
 .css-flag {
+  font-family: monospace;
   width: 24px;
   height: 16px;
   display: inline-block;
   position: relative;
+  font-size: 16px;
 }
 .css-flag.flag-rounded {
   border-radius: 15%;
@@ -29,16 +31,17 @@
   background: linear-gradient(to right, #002395 0, #002395 33.3%, #ffffff 33.34%, #ffffff 66.66%, #ed2939 66.67%, #ed2939 100%);
 }
 .css-flag.flag-nw {
-  background: linear-gradient(to bottom, #ef2b2d 0, #ef2b2d 40%, #ffffff 40.1%, #ffffff 43%, #002868 43.1%, #002868 56.9%, #ffffff 57%, #ffffff 60%, #ef2b2d 58.1%, #ef2b2d 100%);
+  background: #EF2B2D;
+  overflow: hidden;
 }
 .css-flag.flag-nw:before {
+  letter-spacing: -5px;
+  content: '+−';
+  line-height: .5em;
+  font-size: 2.2em;
   position: absolute;
-  left: 20%;
+  left: -3px;
   top: 0;
-  bottom: 0;
-  width: 8%;
-  background: #002868;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
-  content: '';
+  color: #00a;
+  text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff;
 }

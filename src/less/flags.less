@@ -3,10 +3,12 @@
 }
 
 .css-flag {
+  font-family: monospace;
   width: 24px;
   height: 16px;
   display: inline-block;
   position: relative;
+  font-size: 16px;
   
   &.flag-rounded {
     border-radius: 15%;
@@ -40,21 +42,19 @@
   }
 
   &.flag-nw {
-    background:
-      linear-gradient(to bottom,
-        #EF2B2D 0, #EF2B2D 40%, #fff 40.1%, #fff 43%,
-        #002868 43.1%, #002868 56.9%, #fff 57%, #fff 60%,
-        #EF2B2D 58.1%, #EF2B2D 100%);
+    background: #EF2B2D;
+    overflow: hidden;
 
     &:before {
+      letter-spacing: -5px;
+      content: '+−';
+      line-height: .5em;
+      font-size: 2.2em;
       position: absolute;
-      left: 20%;
-      top: 0; bottom: 0;
-      width: 8%;
-      background: #002868;
-      border-left: 1px solid #fff;
-      border-right: 1px solid #fff;
-      content: '';
+      left: -3px;
+      top: 0;
+      color: #00a;
+      text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff;
     }
   }
 }
