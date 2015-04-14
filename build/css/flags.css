@@ -35,8 +35,8 @@
   overflow: hidden;
 }
 .css-flag.flag-norway:before {
-  letter-spacing: -8px;
-  left: -4px;
+  letter-spacing: -0.2em;
+  left: -0.1em;
   content: '+−-';
   line-height: .5em;
   font-size: 2.2em;
@@ -105,11 +105,10 @@
 }
 .css-flag.flag-denmark:before {
   position: absolute;
-  left: -2px;
-  line-height: .55em;
-  content: '+--';
-  font-size: 2em;
-  font-weight: bold;
+  left: -0.08em;
+  line-height: .5em;
+  content: '+−−';
+  font-size: 2.2em;
   letter-spacing: -0.4em;
   color: #fff;
 }
@@ -117,19 +116,21 @@
   background: linear-gradient(to bottom, #3a75c3 0, #3a75c3 33.3%, #000000 33.34%, #000000 66.66%, #ffffff 66.67%, #ffffff 100%);
 }
 .css-flag.flag-greece {
-  background: linear-gradient(#0001fd 0, #0001fd 25%, #ffffff 25%, #ffffff 50%, #0001fd 50%, #0001fd 75%, #ffffff 75%, #ffffff 100%);
-  background-size: auto 25%;
+  background: linear-gradient(#0001fd 0, #0001fd 50%, #ffffff 50%, #ffffff 100%);
+  background-size: auto 20%;
 }
 .css-flag.flag-greece:before {
   position: absolute;
   left: 0;
   top: 0;
-  text-indent: -1px;
+  text-indent: -0.05em;
   overflow: hidden;
   color: #fff;
   height: .5em;
   width: .5em;
   background: #0001FD;
+  font-size: 1em;
+  font-weight: bold;
   content: '+';
   line-height: .5em;
 }

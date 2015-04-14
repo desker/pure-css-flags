@@ -1,11 +1,11 @@
 [x] Austria
-[x] Belarus @FIXME
+[x] Belarus
 [x] Chroatia @FIXME
 [x] Denmark
 [x] Estonia
 [x] France
 [x] Germany
-[x] Greece @FIXME
+[x] Greece
 [ ] Finland
 [x] Italy
 [ ] Luxemburg
