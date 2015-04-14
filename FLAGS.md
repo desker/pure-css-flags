@@ -6,12 +6,12 @@
 [x] France
 [x] Germany
 [x] Greece
-[ ] Finland
+[x] Finland
 [x] Italy
-[ ] Luxemburg
-[ ] Monaco
+[x] Luxemburg
+[x] Monaco
 [x] Norway
-[ ] Poland
+[x] Poland
 [ ] Portugal
 [x] Russia
 [ ] Serbia
