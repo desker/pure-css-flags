@@ -1,10 +1,60 @@
-//@flagsClassName: e('.css-flag-%s');
+.lines(@dir, @cl1, @cl2, @cl3) {
+  background: linear-gradient(@dir, @cl1 0, @cl1 33.3%, @cl2 33.34%, @cl2 66.66%, @cl3 66.67%, @cl3 100%);
+}
 
 .css-flag {
   width: 24px;
   height: 16px;
-  //outline: 1px solid #333;
   display: inline-block;
+  position: relative;
+  
+  &.flag-rounded {
+    border-radius: 15%;
+    overflow: hidden;
+  }
 
-  @import "flags/russia.less";
+  &.flag-square {
+    width: 16px;
+  }
+
+  &.flag-circle {
+    width: 16px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  &.flag-ru {
+    .lines(to bottom, #fff, #00d, #900);
+  }
+
+  &.flag-it {
+    .lines(to right, #009246, #fff, #CE2B37);
+  }
+
+  &.flag-de {
+    .lines(to bottom, #000, #DD0000, #FFCE00);
+  }
+
+  &.flag-fr {
+    .lines(to right, #002395, #fff, #ED2939);
+  }
+
+  &.flag-nw {
+    background:
+      linear-gradient(to bottom,
+        #EF2B2D 0, #EF2B2D 40%, #fff 40.1%, #fff 43%,
+        #002868 43.1%, #002868 56.9%, #fff 57%, #fff 60%,
+        #EF2B2D 58.1%, #EF2B2D 100%);
+
+    &:before {
+      position: absolute;
+      left: 20%;
+      top: 0; bottom: 0;
+      width: 8%;
+      background: #002868;
+      border-left: 1px solid #fff;
+      border-right: 1px solid #fff;
+      content: '';
+    }
+  }
 }

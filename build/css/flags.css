@@ -2,7 +2,43 @@
   width: 24px;
   height: 16px;
   display: inline-block;
+  position: relative;
 }
-.css-flag.russia {
-  background: linear-gradient(to bottom, #eeeeee 0%, #eeeeee 33.3%, #0000aa 33.4%, #0000aa 66.7%, #aa0000 66.8%, #aa0000 100%);
+.css-flag.flag-rounded {
+  border-radius: 15%;
+  overflow: hidden;
+}
+.css-flag.flag-square {
+  width: 16px;
+}
+.css-flag.flag-circle {
+  width: 16px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.css-flag.flag-ru {
+  background: linear-gradient(to bottom, #ffffff 0, #ffffff 33.3%, #0000dd 33.34%, #0000dd 66.66%, #990000 66.67%, #990000 100%);
+}
+.css-flag.flag-it {
+  background: linear-gradient(to right, #009246 0, #009246 33.3%, #ffffff 33.34%, #ffffff 66.66%, #ce2b37 66.67%, #ce2b37 100%);
+}
+.css-flag.flag-de {
+  background: linear-gradient(to bottom, #000000 0, #000000 33.3%, #dd0000 33.34%, #dd0000 66.66%, #ffce00 66.67%, #ffce00 100%);
+}
+.css-flag.flag-fr {
+  background: linear-gradient(to right, #002395 0, #002395 33.3%, #ffffff 33.34%, #ffffff 66.66%, #ed2939 66.67%, #ed2939 100%);
+}
+.css-flag.flag-nw {
+  background: linear-gradient(to bottom, #ef2b2d 0, #ef2b2d 40%, #ffffff 40.1%, #ffffff 43%, #002868 43.1%, #002868 56.9%, #ffffff 57%, #ffffff 60%, #ef2b2d 58.1%, #ef2b2d 100%);
+}
+.css-flag.flag-nw:before {
+  position: absolute;
+  left: 20%;
+  top: 0;
+  bottom: 0;
+  width: 8%;
+  background: #002868;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  content: '';
 }
