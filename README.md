@@ -8,14 +8,18 @@
 ## Available countries:
 
  * austria
- * belarus (**bugs**)
+ * belarus
  * croatia (**bugs**)
- * denmark (**bugs**)
+ * denmark
  * estonia
+ * finland
  * france
  * germany
+ * greece
  * italy
- * greece (**bugs**)
+ * luxemburg
+ * monaco
  * norway
+ * poland
  * russia
  * spain (**bugs**)
