@@ -1,39 +1,43 @@
+.small-flags {
+  font-size: 24px;
+}
 .css-flag {
   font-family: monospace;
   display: inline-block;
   position: relative;
   height: 1em;
   width: 1.5em;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 .css-flag.flag-rounded {
   border-radius: 15%;
   overflow: hidden;
 }
 .css-flag.flag-square {
-  width: 16px;
+  width: 1em;
 }
 .css-flag.flag-circle {
-  width: 16px;
+  width: 1em;
   overflow: hidden;
   border-radius: 50%;
 }
-.css-flag.flag-russia {
+.css-flag.of-russia {
   background: linear-gradient(to bottom, #ffffff 0, #ffffff 33.3%, #0000dd 33.34%, #0000dd 66.66%, #990000 66.67%, #990000 100%);
 }
-.css-flag.flag-italy {
+.css-flag.of-italy {
   background: linear-gradient(to right, #009246 0, #009246 33.3%, #ffffff 33.34%, #ffffff 66.66%, #ce2b37 66.67%, #ce2b37 100%);
 }
-.css-flag.flag-germany {
+.css-flag.of-germany {
   background: linear-gradient(to bottom, #000000 0, #000000 33.3%, #dd0000 33.34%, #dd0000 66.66%, #ffce00 66.67%, #ffce00 100%);
 }
-.css-flag.flag-france {
+.css-flag.of-france {
   background: linear-gradient(to right, #002395 0, #002395 33.3%, #ffffff 33.34%, #ffffff 66.66%, #ed2939 66.67%, #ed2939 100%);
 }
-.css-flag.flag-norway {
+.css-flag.of-norway {
   background: #EF2B2D;
   overflow: hidden;
 }
-.css-flag.flag-norway:before {
+.css-flag.of-norway:before {
   letter-spacing: -0.2em;
   left: -0.1em;
   content: '+−-';
@@ -44,27 +48,26 @@
   color: #00a;
   text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff;
 }
-.css-flag.flag-austria {
+.css-flag.of-austria {
   background: linear-gradient(to bottom, #d81e05 0, #d81e05 33.3%, #ffffff 33.34%, #ffffff 66.66%, #d81e05 66.67%, #d81e05 100%);
 }
-.css-flag.flag-spain {
+.css-flag.of-spain {
   background: linear-gradient(to bottom, #cd3032 0, #cd3032 25%, #fbfb30 25%, #fbfb30 75%, #cd3032 75%);
 }
-.css-flag.flag-spain:before {
-  content: '∋';
-  transform: rotate(90deg);
-  font-weight: bold;
+.css-flag.of-spain:before {
+  content: '';
+  left: 20%;
+  top: 50%;
+  width: 15%;
+  height: 40%;
+  display: block;
   position: absolute;
-  top: -1px;
-  left: 2px;
-  line-height: 1.8em;
-  letter-spacing: -2px;
-  font-size: .7em;
+  background: #E4464C;
 }
-.css-flag.flag-belarus {
+.css-flag.of-belarus {
   background: linear-gradient(to bottom, #fe0002 0, #fe0002 33.3%, #fe0002 33.34%, #fe0002 66.66%, #008403 66.67%, #008403 100%);
 }
-.css-flag.flag-belarus:before {
+.css-flag.of-belarus:before {
   position: absolute;
   left: 0;
   top: 0;
@@ -76,10 +79,10 @@
   content: '';
   box-sizing: border-box;
 }
-.css-flag.flag-croatia {
+.css-flag.of-croatia {
   background: linear-gradient(to bottom, #c40002 0, #c40002 33.3%, #ffffff 33.34%, #ffffff 66.66%, #0800b5 66.67%, #0800b5 100%);
 }
-.css-flag.flag-croatia:before {
+.css-flag.of-croatia:before {
   position: absolute;
   z-index: 20;
   font-size: 0.3em;
@@ -97,12 +100,12 @@
   content: '▚▚';
   border-radius: 0 0 50% 50%;
 }
-.css-flag.flag-denmark {
+.css-flag.of-denmark {
   background: #CF0B31;
   position: relative;
   overflow: hidden;
 }
-.css-flag.flag-denmark:before {
+.css-flag.of-denmark:before {
   position: absolute;
   left: -0.08em;
   line-height: .5em;
@@ -112,14 +115,14 @@
   color: #fff;
   font-weight: bold;
 }
-.css-flag.flag-estonia {
+.css-flag.of-estonia {
   background: linear-gradient(to bottom, #3a75c3 0, #3a75c3 33.3%, #000000 33.34%, #000000 66.66%, #ffffff 66.67%, #ffffff 100%);
 }
-.css-flag.flag-greece {
+.css-flag.of-greece {
   background: linear-gradient(#0001fd 0, #0001fd 50%, #ffffff 50%, #ffffff 100%);
   background-size: auto 20%;
 }
-.css-flag.flag-greece:before {
+.css-flag.of-greece:before {
   position: absolute;
   left: 0;
   top: 0;
@@ -134,12 +137,12 @@
   content: '+';
   line-height: .5em;
 }
-.css-flag.flag-finland {
+.css-flag.of-finland {
   background: #fff;
   position: relative;
   overflow: hidden;
 }
-.css-flag.flag-finland:before {
+.css-flag.of-finland:before {
   position: absolute;
   left: -0.08em;
   line-height: .5em;
@@ -149,13 +152,13 @@
   color: #305A96;
   font-weight: bold;
 }
-.css-flag.flag-luxemburg {
+.css-flag.of-luxemburg {
   background: linear-gradient(to bottom, #ee515e 0, #ee515e 33.3%, #ffffff 33.34%, #ffffff 66.66%, #30b1e2 66.67%, #30b1e2 100%);
 }
-.css-flag.flag-monaco {
+.css-flag.of-monaco {
   width: 1em !important;
   background: linear-gradient(#ca3051 0, #ca3051 50%, #ffffff 50%, #ffffff 100%);
 }
-.css-flag.flag-poland {
+.css-flag.of-poland {
   background: linear-gradient(#ffffff 0%, #ffffff 50%, #ca3051 50%, #ca3051 100%);
 }

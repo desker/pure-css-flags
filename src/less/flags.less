@@ -2,12 +2,20 @@
   background: linear-gradient(@dir, @cl1 0, @cl1 33.3%, @cl2 33.34%, @cl2 66.66%, @cl3 66.67%, @cl3 100%);
 }
 
-.css-flag {
+
+.small-flags {
+  font-size: 24px;
+}
+
+@base-classname: css-flag;
+
+.@{base-classname} {
   font-family: monospace;
   display: inline-block;
   position: relative;
   height: 1em;
   width: 1.5em;
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
   
   &.flag-rounded {
     border-radius: 15%;
@@ -15,11 +23,11 @@
   }
 
   &.flag-square {
-    width: 16px;
+    width: 1em;
   }
 
   &.flag-circle {
-    width: 16px;
+    width: 1em;
     overflow: hidden;
     border-radius: 50%;
   }

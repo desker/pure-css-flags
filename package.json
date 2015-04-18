@@ -1,20 +1,71 @@
 {
-  "name": "pure-css-flags",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Serg Desker",
-  "license": "MIT",
-  "devDependencies": {
-    "browser-sync": "^2.6.1",
-    "gulp": "^3.8.11",
-    "gulp-less": "^3.0.2",
-    "gulp-load-plugins": "^0.10.0",
-    "gulp-notify": "^2.2.0",
-    "gulp-plumber": "^1.0.0",
-    "less-plugin-autoprefix": "^1.4.1"
-  }
+    "app_name": "pure-css-flags", 
+    "nodejs": true, 
+    "additional_trust_anchors": "", 
+    "inject-js-end": "", 
+    "node-remote": "", 
+    "keywords": [], 
+    "devDependencies": {
+        "gulp-notify": "^2.2.0", 
+        "gulp-load-plugins": "^0.10.0", 
+        "gulp-less": "^3.0.2", 
+        "gulp": "^3.8.11", 
+        "gulp-plumber": "^1.0.0", 
+        "browser-sync": "^2.6.1", 
+        "less-plugin-autoprefix": "^1.4.1"
+    }, 
+    "author": "Serg Desker", 
+    "user-agent": "", 
+    "window": {
+        "fullscreen": false, 
+        "kiosk_emulation": false, 
+        "resizable": false, 
+        "show": true, 
+        "always-on-top": false, 
+        "frame": true, 
+        "title": "pure-css-flags", 
+        "kiosk": true, 
+        "height": 480, 
+        "exe_icon": "", 
+        "visible": true, 
+        "as_desktop": false, 
+        "toolbar": true, 
+        "position": "center", 
+        "show_in_taskbar": true, 
+        "mac_icon": "", 
+        "width": 640, 
+        "transparent": false, 
+        "icon": ""
+    }, 
+    "version": "0.1.0", 
+    "inject-js-start": "", 
+    "main": "build\\index.html", 
+    "chromium-args": "", 
+    "webexe_settings": {
+        "linux-x32": false, 
+        "windows-x64": true, 
+        "download_dir": "D:\\home\\nw", 
+        "nw_compression_level": 5, 
+        "mac-x32": false, 
+        "windows-x32": true, 
+        "mac-x64": false, 
+        "nw_version": "0.12.1", 
+        "force_download": false, 
+        "linux-x64": false
+    }, 
+    "description": "", 
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }, 
+    "webkit": {
+        "page-cache": false, 
+        "java": false, 
+        "plugin": false
+    }, 
+    "js-flags": "", 
+    "name": "pure-css-flags", 
+    "license": "MIT", 
+    "single-instance": true, 
+    "snapshot": "", 
+    "node-main": ""
 }
