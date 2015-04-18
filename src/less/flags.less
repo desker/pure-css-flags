@@ -2,6 +2,18 @@
   background: linear-gradient(@dir, @cl1 0, @cl1 33.3%, @cl2 33.34%, @cl2 66.66%, @cl3 66.67%, @cl3 100%);
 }
 
+.lines-equal(@colors, @i, @set, @pos) {
+  @val: extract(@colors, @i);
+
+//  .build-stripes(@colors, @i+1);
+}
+
+.lines-equal(@colors) when (length(@colors)>0) {
+  @number-of-stripes: length(@colors);
+  @stripe-height: 100% / @number-of-stripes;
+  @gradient: e("to bottom");
+}
+
 
 .small-flags {
   font-size: 24px;
@@ -45,7 +57,7 @@
   @import 'flags/estonia.less';
   @import 'flags/greece.less';
   @import 'flags/finland.less';
-  @import 'flags/luxemburg.less';
+  @import 'flags/luxembourg.less';
   @import 'flags/monaco.less';
   @import 'flags/poland.less';
 

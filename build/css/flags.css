@@ -58,11 +58,13 @@
   content: '';
   left: 20%;
   top: 50%;
+  margin-top: -0.15em;
   width: 15%;
-  height: 40%;
+  border-radius: 0 0 .2em .2em;
+  height: 30%;
   display: block;
   position: absolute;
-  background: #E4464C;
+  background: radial-gradient(#487a99 0, #487a99 0.05em, #e4464c 0.051em);
 }
 .css-flag.of-belarus {
   background: linear-gradient(to bottom, #fe0002 0, #fe0002 33.3%, #fe0002 33.34%, #fe0002 66.66%, #008403 66.67%, #008403 100%);
@@ -152,7 +154,7 @@
   color: #305A96;
   font-weight: bold;
 }
-.css-flag.of-luxemburg {
+.css-flag.of-luxembourg {
   background: linear-gradient(to bottom, #ee515e 0, #ee515e 33.3%, #ffffff 33.34%, #ffffff 66.66%, #30b1e2 66.67%, #30b1e2 100%);
 }
 .css-flag.of-monaco {
