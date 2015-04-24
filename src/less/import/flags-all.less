@@ -1,0 +1,150 @@
+&.of-austria {
+  .flag-srtipes(#D81E05 #fff #D81E05);
+}
+
+&.of-belarus {
+  .flag-srtipes(#FE0002 #FE0002 #008403);
+
+  &:before {
+    position: absolute;
+    left: 0; top: 0; bottom: 0; width: 3px;
+    z-index: 20;
+    background: #f00;
+    border: 2px dotted #fff;
+    content: '';
+    box-sizing: border-box;
+  }
+}
+
+&.of-croatia {
+  .flag-srtipes(#C40002 #fff #0800B5);
+
+  &:before {
+    position: absolute;
+    z-index: 20;
+    font-size: 0.3em;
+    letter-spacing: -1px;
+    overflow: hidden;
+    background: #B7060C;
+    line-height: .7em;
+    color: #fff;
+    left: 50%; top: 50%;
+    white-space: nowrap;
+    height: 1em;
+    margin-left: -.7em; margin-top: -.5em;
+    content: '▚▚';
+    //border: 1px solid fadeout(#C40002, 40%);
+    border-radius: 0 0 50% 50%;
+  }
+}
+
+&.of-denmark {
+  background: #CF0B31;
+  position: relative;
+  overflow: hidden;
+  
+  &:before {
+    position: absolute;
+    left: -.08em;
+    line-height: .5em;
+    content: '+−−';
+    font-size: 2.2em;
+    letter-spacing: -.4em;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+&.of-estonia {
+  .flag-srtipes(#3A75C3 #000000 #fff);
+}
+
+&.of-finland {
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  
+  &:before {
+    position: absolute;
+    left: -.08em;
+    line-height: .5em;
+    content: '+−−';
+    font-size: 2.2em;
+    letter-spacing: -.4em;
+    color: #305A96;
+    font-weight: bold;
+  }
+}
+&.of-france {
+  .flag-srtipes(#002395 #fff #ED2939, to right);
+}
+&.of-germany {
+  .flag-srtipes(#000 #DD0000 #FFCE00);
+}
+&.of-greece {
+  .flag-srtipes(#0001FD #fff);
+  background-size: auto 20%;
+
+  &:before {
+    position: absolute;
+    left: 0; top: 0;
+    text-indent: -.05em;
+    overflow: hidden;
+    color: #fff;
+    height: .5em;
+    width: .5em;
+    background: #0001FD;
+    font-size: 1em;
+    font-weight: bold;
+    content: '+';
+    line-height: .5em;
+  }
+}
+&.of-italy {
+  .flag-srtipes(#009246 #fff #CE2B37, to right);
+}
+&.of-luxembourg {
+  .flag-srtipes(#EE515E #fff #30B1E2);
+}
+&.of-monaco {
+  width: 1em !important;
+  .flag-srtipes(#CA3051 #fff);
+}
+&.of-norway {
+  background: #EF2B2D;
+  overflow: hidden;
+
+  &:before {
+    letter-spacing: -.2em;
+    left: -.1em;
+    content: '+−-';
+    line-height: .5em;
+    font-size: 2.2em;
+    position: absolute;
+    top: 0;
+    color: #00a;
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff;
+  }
+}
+&.of-poland {
+  .flag-srtipes(#fff #CA3051);
+}
+&.of-russia {
+  .flag-srtipes(#fff #00d #900);
+}
+&.of-spain {
+  .flag-srtipes(#CD3032 #FBFB30 #FBFB30 #CD3032);
+
+  &:before {
+    content: '';
+    left: 20%;
+    top: 50%;
+    margin-top: -.15em;
+    width: 15%;
+    border-radius: 0 0 .2em .2em;
+    height: 30%;
+    display: block;
+    position: absolute;
+    //background: #E4464C;
+    background: radial-gradient(#487A99 0, #487A99 .05em, #E4464C .051em);
+  }
+}

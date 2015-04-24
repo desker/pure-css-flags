@@ -1,32 +1,13 @@
-.lines(@dir, @cl1, @cl2, @cl3) {
-  background: linear-gradient(@dir, @cl1 0, @cl1 33.3%, @cl2 33.34%, @cl2 66.66%, @cl3 66.67%, @cl3 100%);
-}
+@import 'import/flags-mixins.less';
+@import 'import/flags-all.less';
 
-.lines-equal(@colors, @i, @set, @pos) {
-  @val: extract(@colors, @i);
-
-//  .build-stripes(@colors, @i+1);
-}
-
-.lines-equal(@colors) when (length(@colors)>0) {
-  @number-of-stripes: length(@colors);
-  @stripe-height: 100% / @number-of-stripes;
-  @gradient: e("to bottom");
-}
-
-
-.small-flags {
-  font-size: 24px;
-}
-
-@base-classname: css-flag;
-
-.@{base-classname} {
+.css-flag {
   font-family: monospace;
   display: inline-block;
   position: relative;
   height: 1em;
   width: 1.5em;
+  font-size: 24px;
   box-shadow: 0 0 3px rgba(0,0,0,.3);
   
   &.flag-rounded {
@@ -43,22 +24,4 @@
     overflow: hidden;
     border-radius: 50%;
   }
-
-  @import 'flags/russia.less';
-  @import 'flags/italy.less';
-  @import 'flags/germany.less';
-  @import 'flags/france.less';
-  @import 'flags/norway.less';
-  @import 'flags/austria.less';
-  @import 'flags/spain.less';
-  @import 'flags/belarus.less';
-  @import 'flags/croatia.less';
-  @import 'flags/denmark.less';
-  @import 'flags/estonia.less';
-  @import 'flags/greece.less';
-  @import 'flags/finland.less';
-  @import 'flags/luxembourg.less';
-  @import 'flags/monaco.less';
-  @import 'flags/poland.less';
-
 }

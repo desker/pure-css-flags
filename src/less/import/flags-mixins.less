@@ -1,0 +1,34 @@
+.lines(@dir, @cl1, @cl2, @cl3) {
+  background: linear-gradient(@dir, @cl1 0, @cl1 33.3%, @cl2 33.34%, @cl2 66.66%, @cl3 66.67%, @cl3 100%);
+}
+
+.flag-stripes-gradient(@colors, @dir) when (length(@colors) = 2) {
+  @c1: extract(@colors, 1);
+  @c2: extract(@colors, 2);
+  @map: %("%a 0, %a 50%, %a 50%, %a 100%", @c1, @c1, @c2, @c2);
+  background: linear-gradient(@dir, e(@map));
+}
+
+.flag-stripes-gradient(@colors, @dir) when (length(@colors) = 3) {
+  @c1: extract(@colors, 1);
+  @c2: extract(@colors, 2);
+  @c3: extract(@colors, 3);
+  @map: %("%a 0, %a 33%, %a 33%, %a 66%, %a 66%, %a 100%",
+    @c1, @c1, @c2, @c2, @c3, @c3);
+  background: linear-gradient(@dir, e(@map));
+}
+
+.flag-stripes-gradient(@colors, @dir) when (length(@colors) = 4) {
+  @c1: extract(@colors, 1);
+  @c2: extract(@colors, 2);
+  @c3: extract(@colors, 3);
+  @c4: extract(@colors, 4);
+  @map: %("%a 0, %a 25%, %a 25%, %a 50%, %a 50%, %a 75%, %a 75%, %a 100%",
+    @c1, @c1, @c2, @c2, @c3, @c3, @c4, @c4);
+  background: linear-gradient(@dir, e(@map));
+}
+
+.flag-srtipes(@colors, @dir: to bottom) {
+  .flag-stripes-gradient(@colors, @dir);
+  
+}

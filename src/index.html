@@ -7,29 +7,25 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css"> 
     <link rel="stylesheet" href="css/flags.css">
   </head>
   <body>
   
-  <div class="small-flags">
+  <div class="resize">
+    <input id="flag-resize" type="range" min="12" max="72" step="1" value="16">
+  </div>
 
-    <span class="css-flag of-russia"></span>
-    <span class="css-flag of-italy"></span>
-    <span class="css-flag of-germany"></span>
-    <span class="css-flag of-france"></span>
-    <span class="css-flag of-norway"></span>
-    <span class="css-flag of-spain"></span>
-    <span class="css-flag of-austria"></span>
-    <span class="css-flag of-belarus"></span>
-    <span class="css-flag of-croatia"></span>
-    <span class="css-flag of-denmark"></span>
-    <span class="css-flag of-estonia"></span>
-    <span class="css-flag of-greece"></span>
-    <span class="css-flag of-finland"></span>
-    <span class="css-flag of-luxembourg"></span>
-    <span class="css-flag of-monaco"></span>
-    <span class="css-flag of-poland"></span>
+  <div class="wrap">
+
+    <div class="flags-outer">
+
+      <% flags.forEach(function(flag) { -%>
+        <%= flag.substr(0, flag.indexOf('.less')) %>
+        <span class="css-flag of-<%= flag.substr(0, flag.indexOf('.less')) %>"></span>
+      <% }) -%>
+
+    </div>
     
   </div>
 
