@@ -54,7 +54,12 @@
       var sz = $(this).val();
       $('.flags-outer').css('font-size', sz+'px');
       $('.actual-value').text(sz+'px');
+      localStorage['flags-size'] = sz;
     });
+
+    if (localStorage['flags-size'])
+      $('#flag-resize').val(localStorage['flags-size']).trigger('input');
+
   });
   </script>
   </body>

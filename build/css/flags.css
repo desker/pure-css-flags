@@ -9,12 +9,11 @@
   left: 0;
   top: 0;
   bottom: 0;
-  width: 3px;
   z-index: 20;
-  background: #f00;
-  border: 2px dotted #fff;
+  width: .3em;
+  display: block;
+  background: red;
   content: '';
-  box-sizing: border-box;
 }
 .of-croatia {
   background: linear-gradient(to bottom, #c40002 0, #c40002 33%, #ffffff 33%, #ffffff 66%, #0800b5 66%, #0800b5 100%);
