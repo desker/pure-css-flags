@@ -22,7 +22,8 @@ gulp.task('concat-flags', function(cb) {
 gulp.task('layout', function() {
   gulp.src('./src/*.html')
     .pipe($.ejs({
-      flags: fs.readdirSync('./src/less/import/flags/')
+      flags: fs.readdirSync('./src/less/import/flags/'),
+      sizes: ['xs','sm','md','lg','xl']
     }))
     .pipe(gulp.dest('./build'))
     .pipe(reload({stream: true}));

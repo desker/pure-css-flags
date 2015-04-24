@@ -2,7 +2,7 @@
 
 ## Usage:
 ```html
-    <span class="css-flag flag-russia"></span>
+    <span class="css-flag of-russia"></span>
 ```
 
 ## Available countries:

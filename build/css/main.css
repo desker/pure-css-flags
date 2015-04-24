@@ -7,19 +7,26 @@ html {
   margin: 0;
 }
 .wrap {
-  margin: 0 100px;
+  margin: 0 160px;
 }
-.resize {
+.filter {
   position: fixed;
   left: 0px;
   top: 0px;
-  width: 80px;
-  background: #ccc;
-  height: 100px;
+}
+.filter-item {
+  padding: 10px;
+  display: block;
+}
+.filter-item header {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.filter-item header .actual-value {
+  font-weight: normal;
 }
 #flag-resize {
-  float: right;
-  width: 100px;
-  transform: rotate(-90deg);
-  transform-origin: 0 100%;
+  width: 140px;
+  margin: 0;
+  padding: 0;
 }

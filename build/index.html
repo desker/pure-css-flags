@@ -12,51 +12,50 @@
   </head>
   <body>
   
-  <div class="resize">
-    <input id="flag-resize" type="range" min="12" max="72" step="1" value="16">
+  <div class="filter">
+    <label class="filter-item">
+      <header>
+        Font size
+        <span class="actual-value">16px</span>
+      </header>
+      <input id="flag-resize" type="range" min="12" max="72" step="2" value="16">
+    </label>
   </div>
 
   <div class="wrap">
-
+  
     <div class="flags-outer">
 
-              austria
-        <span class="css-flag of-austria"></span>
-              belarus
-        <span class="css-flag of-belarus"></span>
-              croatia
-        <span class="css-flag of-croatia"></span>
-              denmark
-        <span class="css-flag of-denmark"></span>
-              estonia
-        <span class="css-flag of-estonia"></span>
-              finland
-        <span class="css-flag of-finland"></span>
-              france
-        <span class="css-flag of-france"></span>
-              germany
-        <span class="css-flag of-germany"></span>
-              greece
-        <span class="css-flag of-greece"></span>
-              italy
-        <span class="css-flag of-italy"></span>
-              luxembourg
-        <span class="css-flag of-luxembourg"></span>
-              monaco
-        <span class="css-flag of-monaco"></span>
-              norway
-        <span class="css-flag of-norway"></span>
-              poland
-        <span class="css-flag of-poland"></span>
-              russia
-        <span class="css-flag of-russia"></span>
-              spain
-        <span class="css-flag of-spain"></span>
-      
+              <span class="css-flag of-austria"></span>
+              <span class="css-flag of-belarus"></span>
+              <span class="css-flag of-croatia"></span>
+              <span class="css-flag of-denmark"></span>
+              <span class="css-flag of-estonia"></span>
+              <span class="css-flag of-finland"></span>
+              <span class="css-flag of-france"></span>
+              <span class="css-flag of-germany"></span>
+              <span class="css-flag of-greece"></span>
+              <span class="css-flag of-italy"></span>
+              <span class="css-flag of-luxembourg"></span>
+              <span class="css-flag of-monaco"></span>
+              <span class="css-flag of-norway"></span>
+              <span class="css-flag of-poland"></span>
+              <span class="css-flag of-russia"></span>
+              <span class="css-flag of-spain"></span>
+      
     </div>
-    
+
   </div>
 
-
+  <script src="http://yandex.st/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+  $(function() {
+    $('#flag-resize').on('input', function(val) {
+      var sz = $(this).val();
+      $('.flags-outer').css('font-size', sz+'px');
+      $('.actual-value').text(sz+'px');
+    });
+  });
+  </script>
   </body>
 </html>

@@ -12,23 +12,37 @@
   </head>
   <body>
   
-  <div class="resize">
-    <input id="flag-resize" type="range" min="12" max="72" step="1" value="16">
+  <div class="filter">
+    <label class="filter-item">
+      <header>
+        Font size
+        <span class="actual-value">16px</span>
+      </header>
+      <input id="flag-resize" type="range" min="12" max="72" step="2" value="16">
+    </label>
   </div>
 
   <div class="wrap">
-
+  
     <div class="flags-outer">
 
       <% flags.forEach(function(flag) { -%>
-        <%= flag.substr(0, flag.indexOf('.less')) %>
         <span class="css-flag of-<%= flag.substr(0, flag.indexOf('.less')) %>"></span>
       <% }) -%>
 
     </div>
-    
+
   </div>
 
-
+  <script src="http://yandex.st/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+  $(function() {
+    $('#flag-resize').on('input', function(val) {
+      var sz = $(this).val();
+      $('.flags-outer').css('font-size', sz+'px');
+      $('.actual-value').text(sz+'px');
+    });
+  });
+  </script>
   </body>
 </html>
