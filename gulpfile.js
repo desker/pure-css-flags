@@ -33,10 +33,11 @@ gulp.task('server', function() {
   browserSync({
     server: {
       baseDir: "./build"
-    }
+    },
+    open: false
   });
 
-  gulp.watch('./src/less/**.less', ['styles']);
+  gulp.watch('./src/less/**/*.less', ['styles']);
   gulp.watch('./src/*.html', ['layout']);
 });
 

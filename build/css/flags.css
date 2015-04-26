@@ -45,7 +45,7 @@
 .of-denmark:before {
   position: absolute;
   left: -0.08em;
-  line-height: .34em;
+  line-height: .5em;
   content: '+−−';
   font-size: 2.2em;
   letter-spacing: -0.4em;
@@ -63,7 +63,7 @@
 .of-finland:before {
   position: absolute;
   left: -0.08em;
-  line-height: .34em;
+  line-height: .5em;
   content: '+−−';
   font-size: 2.2em;
   letter-spacing: -0.4em;
@@ -84,15 +84,15 @@
   position: absolute;
   left: 0;
   top: 0;
-  text-indent: -0.08em;
   overflow: hidden;
   color: #fff;
-  height: .46em;
-  width: .46em;
+  height: .62em;
+  width: .62em;
   background: #0001FD;
-  font-size: 1em;
-  content: '+';
-  line-height: .38em;
+  font-size: .8em;
+  content: ' ━╋━';
+  letter-spacing: -0.44em;
+  line-height: .4em;
 }
 .of-italy {
   background: linear-gradient(to right, #009246 0, #009246 33%, #ffffff 33%, #ffffff 66%, #ce2b37 66%, #ce2b37 100%);
@@ -148,7 +148,7 @@
   background: #eee;
 }
 .css-flag {
-  font-family: monospace;
+  font-family: Arial;
   display: inline-block;
   position: relative;
   height: 1em;
