@@ -3,6 +3,7 @@
 }
 
 &.of-belarus {
+  display: none !important;
   .flag-srtipes(#FE0002 #FE0002 #008403);
 
   &:before {
@@ -46,12 +47,12 @@
   
   &:before {
     position: absolute;
-    left: -.08em;
-    line-height: .5em;
-    content: '+−−';
+    line-height: .44em;
+    content: '†';
+    transform: rotate(-90deg);
     font-size: 2.2em;
-    letter-spacing: -.4em;
     color: #fff;
+    left: .05em;
     font-weight: bold;
   }
 }
@@ -62,16 +63,16 @@
 &.of-finland {
   background: #fff;
   position: relative;
-  overflow: hidden;
-  
+  overflow: hidden; 
+
   &:before {
     position: absolute;
-    left: -.08em;
-    line-height: .5em;
-    content: '+−−';
+    line-height: .44em;
+    content: '†';
+    transform: rotate(-90deg);
     font-size: 2.2em;
-    letter-spacing: -.4em;
     color: #305A96;
+    left: .05em;
     font-weight: bold;
   }
 }
@@ -114,15 +115,14 @@
   overflow: hidden;
 
   &:before {
-    letter-spacing: -.2em;
-    left: -.1em;
-    content: '+−-';
-    line-height: .5em;
-    font-size: 2.2em;
     position: absolute;
-    top: 0;
+    line-height: .48em;
+    content: '†';
+    transform: rotate(-90deg);
+    font-size: 2.2em;
     color: #00a;
-    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff;
+    text-shadow: .02em .02em 0 #fff, -.02em -.02em 0 #fff;
+    left: 8px;
   }
 }
 &.of-poland {

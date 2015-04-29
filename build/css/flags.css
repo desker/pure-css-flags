@@ -2,6 +2,7 @@
   background: linear-gradient(to bottom, #d81e05 0, #d81e05 33%, #ffffff 33%, #ffffff 66%, #d81e05 66%, #d81e05 100%);
 }
 .of-belarus {
+  display: none !important;
   background: linear-gradient(to bottom, #fe0002 0, #fe0002 33%, #fe0002 33%, #fe0002 66%, #008403 66%, #008403 100%);
 }
 .of-belarus:before {
@@ -44,12 +45,12 @@
 }
 .of-denmark:before {
   position: absolute;
-  left: -0.08em;
-  line-height: .5em;
-  content: '+−−';
+  line-height: .44em;
+  content: '†';
+  transform: rotate(-90deg);
   font-size: 2.2em;
-  letter-spacing: -0.4em;
   color: #fff;
+  left: .05em;
   font-weight: bold;
 }
 .of-estonia {
@@ -62,12 +63,12 @@
 }
 .of-finland:before {
   position: absolute;
-  left: -0.08em;
-  line-height: .5em;
-  content: '+−−';
+  line-height: .44em;
+  content: '†';
+  transform: rotate(-90deg);
   font-size: 2.2em;
-  letter-spacing: -0.4em;
   color: #305A96;
+  left: .05em;
   font-weight: bold;
 }
 .of-france {
@@ -109,15 +110,14 @@
   overflow: hidden;
 }
 .of-norway:before {
-  letter-spacing: -0.2em;
-  left: -0.1em;
-  content: '+−-';
-  line-height: .5em;
-  font-size: 2.2em;
   position: absolute;
-  top: 0;
+  line-height: .48em;
+  content: '†';
+  transform: rotate(-90deg);
+  font-size: 2.2em;
   color: #00a;
-  text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff;
+  text-shadow: 0.02em 0.02em 0 #ffffff, -0.02em -0.02em 0 #ffffff;
+  left: 8px;
 }
 .of-poland {
   background: linear-gradient(to bottom, #ffffff 0, #ffffff 50%, #ca3051 50%, #ca3051 100%);
